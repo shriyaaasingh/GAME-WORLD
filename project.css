@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b1221;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background: #1e293b;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #e2e8f0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #38bdf8;
+  color: #040d22;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+.features,
+.testimonials
+.about-content,
+.games-section {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.features h2
+.testimonial-title,
+.games-title,
+.about-content h2 {
+  margin-bottom: 25px;
+  color: #38bdf8;
+}
+.testimonial-title h2{
+  margin-bottom: 25px;
+  color: #38bdf8;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;border: 1px solid #ddd;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.name-stars {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.stars {
+  color: #f5c518; 
+  font-size: 1.2rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* wraps automatically on small screens */
+  gap: 20px;  
+}
+
+.testimonial-card {
+  flex: 1 1 250px;  /* grows/shrinks, minimum 250px */
+  max-width: 300px;
+   border: solid 1px #ddd;
+   border-radius: 10px;
+  background: #1e293b;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+footer {
+  background: #1e293b;
+  text-align: center;
+  padding: 15px;
+  color: #94a3b8;
+}
+
+/* About Page Container */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  border: 2px solid #1a3560;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.container:hover {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.7);
+}
+
+/* Games Section */
+.games-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.game-card {
+  background-color: #374151;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+}
+
+.game-image-wrapper {
+  position: relative;
+}
+
+.game-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge-new {
+  background-color: #9333ea;
+}
+
+.badge-bestseller {
+  background-color: #eab308;
+}
+
+.badge-sale {
+  background-color: #22c55e;
+}
+
+.game-content {
+  padding: 1rem;
+}
+
+.game-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.game-desc {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.game-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-price {
+  color: #a855f7;
+  font-weight: bold;
+}
+
+.game-price.old {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.game-price.new {
+  color: #22c55e;
+}
+
+.game-btn {
+  padding: 0.5rem 1rem;
+  background-color: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-btn:hover {
+  background-color: #7e22ce;
+}
+
+/* Updated Sign In Section */
+.form-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: #1e293b;
+  color: #fff;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 60px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.form-subtitle {
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  margin-bottom: 20px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-section label {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  margin-top: 5px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="password"],
+.form-section input[type="email"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #0b1221;
+  color: #fff;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+.form-options .forgot {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.form-options .forgot:hover {
+  text-decoration: underline;
+}
+
+.signup-text {
+  font-size: 0.8rem;
+  margin-top: 15px;
+}
+
+.signup-link {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
